@@ -15,7 +15,7 @@ def function():
     return posts     
 
 @register.filter
-def snippet(value, arg=20):
+def snippet(value, arg=20):  
     return value[:arg] + '...'
 
 @register.inclusion_tag('blog/blog-popular-posts.html')
@@ -27,17 +27,13 @@ def latestposts(arg=3):
 def postcategories():
     posts = Post.objects.filter(status=1)
     categories = Category.objects.all()
-    print('start')
-    
-    print(categories)
     
     cat_dict = {}
     
     for name in categories:
         print(name)
         cat_dict[name] = posts.filter(category=name).count()
-        
-    print('end') 
+
     return {'categories': cat_dict} 
 
 
