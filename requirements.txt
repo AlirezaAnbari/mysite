@@ -3,3 +3,4 @@ asgiref
 pytz
 sqlparse
 pillow
+django-extensions

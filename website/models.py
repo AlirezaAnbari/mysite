@@ -9,5 +9,14 @@ class Contact(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     
+    class Meta:
+        ordering = ['created_date']
     def __str__(self):
-        return "{} - {}".format(self.name, self.id)
+        return self.name
+    
+class Newsletter(models.Model):
+    email = models.EmailField()
+    
+    def __str__(self):
+        return self.email
+    
