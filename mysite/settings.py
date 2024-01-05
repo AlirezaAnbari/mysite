@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'robots',
     'website.apps.WebsiteConfig',
     'blog',
 ]
@@ -57,7 +58,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
+# sites framework
 ROOT_URLCONF = 'mysite.urls'
+
+# robots
+ROBOTS_USE_HOST = False
+ROBOTS_USE_SITEMAP = False
 
 TEMPLATES = [
     {

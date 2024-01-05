@@ -4,3 +4,4 @@ pytz
 sqlparse
 pillow
 django-extensions
+django-robots
