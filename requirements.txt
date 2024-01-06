@@ -1,7 +1,13 @@
-Django>3.2,<3.3
-asgiref
-pytz
-sqlparse
-pillow
+Django >3.2,<3.3
+asgiref==3.7.2
+
+django-debug-toolbar
 django-extensions
 django-robots
+django-taggit
+django-summernote
+
+Pillow
+pytz
+sqlparse
+tzdata
