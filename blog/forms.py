@@ -1,11 +1,10 @@
 from django import forms
-from blog.models import Contact
+from blog.models import Comment
 from captcha.fields import CaptchaField
     
-class ContactForm(forms.ModelForm):
-    captcha = CaptchaField()
+class CommentForm(forms.ModelForm):
     
     class Meta:
-        model = Contact
-        fields = '__all__'
+        model = Comment
+        fields = ['post', 'name', 'email', 'subject', 'message']
         
