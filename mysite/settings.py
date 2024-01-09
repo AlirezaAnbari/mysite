@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'taggit',
     'website.apps.WebsiteConfig',
     'blog',
+    'accounts',
 ]
 
 SITE_ID = 1
