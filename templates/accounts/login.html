@@ -14,15 +14,14 @@
         <form class="pt-3" method="post" action="{% url 'accounts:login' %}">
             {% csrf_token %}
             <div class="form-group py-2">
-                {{form.as_p}}
-                <!-- <div class="input-field"> <span class="far fa-user p-2"></span> 
+                <div class="input-field"> <span class="far fa-user p-2"></span> 
                     <input type="text" name="username" placeholder="Username" required class=""> </div>
             </div>
             <div class="form-group py-1 pb-2">
                 <div class="input-field"> <span class="fas fa-lock p-2"></span> 
                     <input type="password" name="password" placeholder="Enter your Password" required class=""> 
                     <button class="btn bg-white text-muted" type="submit"> <span class="far fa-eye-slash"></span> </button> </div>
-            </div> -->
+            </div>
             <div class="d-flex align-items-start">
                 <div class="remember"> <label class="option text-muted"> Remember me 
                     <input type="radio" name="radio"> <span class="checkmark"></span> </label> </div>
